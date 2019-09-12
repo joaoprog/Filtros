@@ -2,10 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
-  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
 
-  <script src="components/jquery-3.4.1.js"></script>
+  <script src="components/jquery-3.4.1.min.js"></script>
   <script src="components/acao.js"></script>
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -16,24 +14,21 @@
   <div class="container">
   <div class="row">
     <div class="col-xs-12">
-        <button class="btn btn-primary btn-block">Camera</button>
+        <button class="btn btn-primary btn-block" id="camera">Camera</button>
+        <img src="" alt="" id="image" class="img img-responsive">
+        <br>
     </div>
   </div>
-  <div class="row">
-    <div class="foto">
-
-    </div>
-  </div>
-    <h3>Opacidade:</h3>
-      <input type="range">
-    <h3>Saturação:</h4>
-      <input type="range">
-    <h3>Escala de cinza:</h3>
-      <input type="range">
-    <h3>Desfoque:</h3>
-     <input type="range">
-    <h3>Sepia:</h3>
-      <input type="range">
+    <h4>Opacidade:</h4>
+      <input type="range"><hr>
+    <h4>Saturação:</h4>
+      <input type="range"><hr>
+    <h4>Escala de cinza:</h4>
+      <input type="range"><hr>
+    <h4>Desfoque:</h4>
+     <input type="range"><hr>
+    <h4>Sepia:</h4>
+      <input type="range"><hr>
   </div>
 </body>
 </html>
